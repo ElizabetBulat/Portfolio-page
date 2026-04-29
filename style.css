@@ -1064,35 +1064,42 @@ a {
     }
 }
 body.process-page .back-btn {
-    position: fixed !important;
-    top: 90px !important;
-    left: 30px !important;
-    z-index: 9999 !important;
+    position: fixed;
+    top: 90px;
+    left: 30px;
+    z-index: 9999;
 
-    width: 54px !important;
-    height: 54px !important;
-    padding: 0 !important;
+    width: 56px;
+    height: 56px;
 
-    display: grid !important;
-    place-items: center !important;
+    border-radius: 50%;
 
-    border-radius: 50% !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-    background: rgba(255,255,255,0.14) !important;
-    color: #ffffff !important;
-    border: 1px solid rgba(255,255,255,0.25) !important;
+    background: rgba(255,255,255,0.14);
+    border: 1px solid rgba(255,255,255,0.25);
 
     backdrop-filter: blur(14px);
+
     box-shadow:
         0 10px 30px rgba(0,0,0,0.25),
         inset 0 1px 0 rgba(255,255,255,0.25);
 
-    font-size: 24px !important;
-    text-decoration: none !important;
-    transition: 0.25s ease !important;
+    cursor: pointer;
+    transition: 0.25s ease;
 }
 
+
+body.process-page .back-btn::before {
+    content: "←";
+    color: white;
+    font-size: 22px;
+}
+
+/* hover */
 body.process-page .back-btn:hover {
-    background: rgba(255,255,255,0.28) !important;
-    transform: scale(1.08) !important;
+    background: rgba(255,255,255,0.28);
+    transform: scale(1.08);
 }
