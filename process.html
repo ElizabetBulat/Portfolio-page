@@ -3,18 +3,137 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project Process</title>
-
+    <title>Task Manager | Project Process</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="process-page">
 
-<div class="gif-wrapper">
-    <img src="process.gif" alt="Project Process">
+<section class="process-hero">
+    <img src="process.gif" alt="Task Manager process preview">
 
-    <button class="back-btn" onclick="history.back()">
-        ← Back
-    </button>
-</div>
+    <div class="process-overlay">
+        <a href="project.html" class="back-btn">← Back</a>
+
+        <div class="process-hero-text">
+            <span>Project Plan</span>
+            <h1>Task Manager Application</h1>
+            <p>
+                A planned web application for managing tasks, roles, statuses,
+                priorities, and workflow progress.
+            </p>
+        </div>
+    </div>
+</section>
+
+<main class="process-content">
+    <section class="process-section">
+        <div class="process-title">
+            <span>01</span>
+            <h2>Project Idea</h2>
+        </div>
+
+        <p>
+            The main idea of this project is to create a task management system
+            that helps users organize work, assign tasks, track progress, and manage
+            priorities. The application is planned as a practical student project
+            with a real project structure.
+        </p>
+    </section>
+
+    <section class="process-grid">
+        <div class="process-card">
+            <h3>Main Features</h3>
+            <ul>
+                <li>Adding new tasks</li>
+                <li>Task statuses: To Do, In Progress, Done</li>
+                <li>Task priorities: Low, Medium, High</li>
+                <li>Search and filtering</li>
+                <li>Saving data in a database</li>
+            </ul>
+        </div>
+
+        <div class="process-card">
+            <h3>User Roles</h3>
+            <ul>
+                <li>Admin can manage all tasks</li>
+                <li>Manager can create and assign tasks</li>
+                <li>User can update personal task progress</li>
+            </ul>
+        </div>
+
+        <div class="process-card">
+            <h3>Frontend</h3>
+            <ul>
+                <li>HTML for page structure</li>
+                <li>CSS for modern responsive design</li>
+                <li>JavaScript for interactions and dynamic task logic</li>
+            </ul>
+        </div>
+
+        <div class="process-card">
+            <h3>Backend & Database</h3>
+            <ul>
+                <li>Node.js for server-side logic</li>
+                <li>Express.js for API routes</li>
+                <li>SQL database for storing users and tasks</li>
+                <li>REST API for frontend/backend communication</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="process-section">
+        <div class="process-title">
+            <span>02</span>
+            <h2>Planned Database Structure</h2>
+        </div>
+
+        <div class="db-layout">
+            <div>
+                <h3>Users table</h3>
+                <p>id, name, email, password, role</p>
+            </div>
+
+            <div>
+                <h3>Tasks table</h3>
+                <p>id, title, description, status, priority, deadline, user_id</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="process-section">
+        <div class="process-title">
+            <span>03</span>
+            <h2>Development Plan</h2>
+        </div>
+
+        <div class="steps">
+            <div class="step">
+                <strong>Step 1</strong>
+                <p>Create layout and basic interface with HTML and CSS.</p>
+            </div>
+
+            <div class="step">
+                <strong>Step 2</strong>
+                <p>Add JavaScript logic: creating tasks, filtering, changing status.</p>
+            </div>
+
+            <div class="step">
+                <strong>Step 3</strong>
+                <p>Create Node.js backend with Express routes.</p>
+            </div>
+
+            <div class="step">
+                <strong>Step 4</strong>
+                <p>Connect SQL database and save task information.</p>
+            </div>
+
+            <div class="step">
+                <strong>Step 5</strong>
+                <p>Test the application and prepare final presentation.</p>
+            </div>
+        </div>
+    </section>
+</main>
 
 </body>
 </html>
