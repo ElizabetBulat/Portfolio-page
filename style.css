@@ -985,3 +985,21 @@ a {
         grid-template-columns: 1fr;
     }
 }
+.scroll-gif {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.gif {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.8s ease;
+}
+
+.gif.active {
+    opacity: 1;
+}
